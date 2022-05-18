@@ -1,10 +1,28 @@
-def checker(var1):
-    if type(var1) != str:
-        raise TypeError(f"Sorry, we can not work with {type(var1)}, we need class str")
+class BLE(Exception):
+    def __str__(self):
+        return f"With so much material the house cannot be built!"
+def ch(amount_of_material, l):
+    if amount_of_material > l:
+        return "enough material"
     else:
-        return var1
-fir = 10
-checker(fir)
+        raise BLE(amount_of_material)
+materials = 123
+ch(materials,300)
+
+
+
+
+
+
+
+
+# def checker(var1):
+#     if type(var1) != str:
+#         raise TypeError(f"Sorry, we can not work with {type(var1)}, we need class str")
+#     else:
+#         return var1
+# fir = 10
+# checker(fir)
 
 
 
