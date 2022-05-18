@@ -1,13 +1,28 @@
-try:
-     print(k)
-except:
-    print("Something went wrong")
-else:
-    print("Else program do")
-finally:
-    print(" The Program has completed it`s work")
+def checker(var1):
+    if type(var1) != str:
+        raise TypeError(f"Sorry, we can not work with {type(var1)}, we need class str")
+    else:
+        return var1
+fir = 10
+checker(fir)
 
 
+
+
+
+
+
+
+# try:
+#      print(k)
+# except:
+#     print("Something went wrong")
+# else:
+#     print("Else program do")
+# finally:
+#     print(" The Program has completed it`s work")
+#
+#
 
 
 
