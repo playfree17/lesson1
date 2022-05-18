@@ -1,15 +1,25 @@
-class BLE(Exception):
-    def __str__(self):
-        return f"With so much material the house cannot be built!"
-def ch(amount_of_material, l):
-    if amount_of_material > l:
-        return "enough material"
-    else:
-        raise BLE(amount_of_material)
-materials = 123
-ch(materials,300)
+import warnings
+warnings.simplefilter("ignore" , SyntaxWarning)
+warnings.simplefilter("always",ImportWarning)
+warnings.warn("Warning, no code here",SyntaxWarning)
+warnings.warn("Warning, module not import ",ImportWarning)
 
 
+
+
+
+# class BLE(Exception):
+#     def __str__(self):
+#         return f"With so much material the house cannot be built!"
+# def ch(amount_of_material, l):
+#     if amount_of_material > l:
+#         return "enough material"
+#     else:
+#         raise BLE(amount_of_material)
+# materials = 123
+# ch(materials,300)
+#
+#
 
 
 
