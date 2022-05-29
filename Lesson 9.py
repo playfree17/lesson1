@@ -9,7 +9,7 @@ try:
     print(5/0)
 except ZeroDivisionError:
     print("ZeroDivisionError")
-logging.basicConfig(level=logging.DEBUG,filename="logs.log",filemode="w",format="We have next logging messange:%(asctime)s%(level name)s - %(message)s")
+logging.basicConfig(level=logging.DEBUG,filename="logs.log",filemode="w",format="We have next logging messange:%(asctime)s%(level name)s - %(message)")
 logging.debug("debug")
 logging.info("info")
 logging.warning("warning")
